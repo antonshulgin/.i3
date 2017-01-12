@@ -153,6 +153,13 @@ bindsym $mod+u border normal
 # finds out, if available)
 bar {
         status_command i3status
+        colors {
+                background #111111
+
+                focused_workspace  #eeeeee #eeeeee #111111
+                active_workspace   #eeeeee #eeeeee #111111
+                inactive_workspace #222222 #222222 #ffffff
+        }
 }
 
 # disable window titles, keep 1px borders
@@ -160,6 +167,8 @@ new_window pixel 1
 
 # colors
 # color class           border  bacckgr text    indicat child_border
-client.focused          #222222 #222222 #eeeeee #222222 #222222 
-client.focused_inactive #000000 #000000 #444444 #000000 #000000 
-client.unfocused        #000000 #000000 #444444 #000000 #000000 
+client.focused          #eeeeee #eeeeee #111111 #eeeeee #eeeeee 
+client.focused_inactive #222222 #222222 #444444 #222222 #222222 
+client.unfocused        #222222 #222222 #444444 #222222 #222222 
+
+exec xsetroot -solid "#111111"

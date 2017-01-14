@@ -163,11 +163,11 @@ bar {
 }
 
 # disable window titles, keep 1px borders
-new_window pixel 1
+new_window pixel 2
 
 # colors
 # color class           border  bacckgr text    indicat child_border
-client.focused          #eeeeee #eeeeee #111111 #eeeeee #eeeeee 
+client.focused          #444444 #444444 #eeeeee #444444 #444444 
 client.focused_inactive #222222 #222222 #444444 #222222 #222222 
 client.unfocused        #222222 #222222 #444444 #222222 #222222 
 
